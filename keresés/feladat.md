@@ -1,6 +1,6 @@
 
 ## Feladat
-
+[link](https://www.hackerrank.com/challenges/pairs/problem?isFullScreen=true)
 Egy egész számokat tartalmazó tömb és egy célérték adott. Határozd meg, hogy hány olyan elem-pár van a tömbben, amelyek különbsége egyenlő a célértékkel.
 
 ### Példa
