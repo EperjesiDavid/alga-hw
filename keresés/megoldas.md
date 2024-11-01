@@ -6,7 +6,7 @@
 
 2. **Egyetlen Bejárásos Ellenőrzés**: Minden \( x \) elemre a tömbben:
    - Ellenőrizzük, hogy \( x + k \) létezik-e a halmazban. Ha igen, akkor ez egy párt jelent.
-   - Ellenőrizheted \( x - k \)-t is (ha egyedi párokat keresünk, és számít az irány).
+   - Ellenőrizhetjük \( x - k \)-t is (ha egyedi párokat keresünk, és számít az irány).
 
 3. **Időbeli Komplexitás**: A hash halmaz használatával minden ellenőrzés átlagosan \( O(1) \) időben elvégezhető, így a teljes megoldás időbeli komplexitása \( O(n) \).
 
