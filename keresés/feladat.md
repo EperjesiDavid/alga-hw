@@ -33,7 +33,7 @@ A második sor \( n \) szóközzel elválasztott egész számot tartalmaz, amely
 
 ### Megkötések
 
-- \( 2 \leq n \leq 10^5 \)
+- \( 2 <= n <= 10^5 \)
 - \( 0 < k < 10^9 \)
 - \( 0 < arr[i] < 2^{31} - 1 \)
 - minden `arr[i]` elem egyedi lesz
