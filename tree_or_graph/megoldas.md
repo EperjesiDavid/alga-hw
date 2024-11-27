@@ -135,14 +135,14 @@ print(diameter)
 
 ### **Miért működik a kétszeri BFS?**
 1. Egy fában az átmérő mindig két levélcsúcs (végpont) között helyezkedik el.
-2. Az első BFS biztosítja, hogy megtaláljuk az átmérő egyik végpontját (\( u \)).
-3. A második BFS pedig garantálja, hogy megtaláljuk az \( u \)-tól legtávolabbi csúcsot (\( v \)), amely az átmérő másik végpontja. A távolságuk az átmérő.
+2. Az első BFS biztosítja, hogy megtaláljuk az átmérő egyik végpontját \( u \).
+3. A második BFS pedig garantálja, hogy megtaláljuk az \( u \)-tól legtávolabbi csúcsot \( v \), amely az átmérő másik végpontja. A távolságuk az átmérő.
 
 ---
 
 ## **Hatékonyság**
 - Az algoritmus **O(n)** időben fut, mivel a BFS minden csúcsot és élt egyszer látogat meg.
-- Ez hatékony, és a megadott korlátok (\( n \leq 200,000 \)) mellett jól működik.
+- Ez hatékony, és a megadott korlátok \( n <= 200,000 \) mellett jól működik.
 
 ---
 
