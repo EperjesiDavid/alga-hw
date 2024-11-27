@@ -20,7 +20,7 @@ n = int(data[0])  # Csúcsok száma
 edges = [tuple(map(int, line.split())) for line in data[1:]]  # Az összes élt beolvassuk
 ```
 
-- Az első sorban kapjuk meg a fa **csúcsainak számát** (\( n \)).
+- Az első sorban kapjuk meg a fa **csúcsainak számát** \( n \).
 - A következő \( n-1 \) sorban az **élek** találhatók, amelyek azt írják le, mely csúcsok között van él.
 - Ezeket a bemeneteket listába (`edges`) töltjük, hogy később szomszédsági listává alakítsuk.
 
@@ -111,13 +111,13 @@ def bfs(start):
 farthest_node1, _ = bfs(1)
 ```
 - Az 1-es csúcsról elindítunk egy BFS-t.
-- Ennek célja, hogy megtaláljuk a fától legtávolabbi csúcsot (\( u \)).
+- Ennek célja, hogy megtaláljuk a fától legtávolabbi csúcsot \( u \).
 
 #### Második BFS
 ```python
 _, diameter = bfs(farthest_node1)
 ```
-- A legtávolabbi csúcsról (\( u \)) új BFS-t indítunk.
+- A legtávolabbi csúcsról \( u \) új BFS-t indítunk.
 - Az ebben a BFS-ben talált legtávolabbi távolság lesz a **fa átmérője**.
 
 ---
