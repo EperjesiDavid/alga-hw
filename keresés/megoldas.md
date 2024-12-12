@@ -1,16 +1,15 @@
+1. Pozíciók meghatározása: Tároljuk el a számok pozícióit egy tömbben.
+2. Iteráció az indexeken: Iteráljunk az 1-től n-ig, és állapítsuk meg, hogy mikor kell új kört kezdeni.
+3. Új kör felismerése: Ha az aktuális szám pozíciója kisebb, mint az előző számé, akkor új kör szükséges.
 
-## Megoldás magyarázata
+  - Időbeli bonyolultság:
 
+    A pozíciók meghatározása O(n)
+    
+    A körök számlálása O(n)
+    
+    Összesen: O(n)
 
-1. **Hash Halmaz a Gyors Kereséshez**: Az összes elem tárolásával egy hash halmazban gyorsan ellenőrizhető, hogy egy adott elemhez hozzáadott vagy abból kivont \( k \) érték létezik-e a tömbben.
+   - Memóriabonyolultság:
 
-2. **Egyetlen Bejárásos Ellenőrzés**: Minden \( x \) elemre a tömbben:
-   - Ellenőrizzük, hogy \( x + k \) létezik-e a halmazban. Ha igen, akkor ez egy párt jelent.
-   - Ellenőrizhetjük \( x - k \)-t is (ha egyedi párokat keresünk, és számít az irány).
-
-3. **Időbeli Komplexitás**: A hash halmaz használatával minden ellenőrzés átlagosan \( O(1) \) időben elvégezhető, így a teljes megoldás időbeli komplexitása \( O(n) \).
-
-
-
-
-Ez a megközelítés sokkal optimálisabb, mint egy beágyazott ciklus, amely \( O(n^2) \) komplexitású lenne.
+  Az positions tömb miatt O(n)
