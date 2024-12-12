@@ -1,39 +1,22 @@
+Adott egy tömb, amely 1-től n-ig minden számot pontosan egyszer tartalmaz. A feladatod, hogy összegyűjtsd a számokat 1-től n-ig növekvő sorrendben. 
+Minden körben balról jobbra haladsz végig a tömbön, és annyi számot gyűjtesz össze, amennyit csak lehet. Mi lesz a körök teljes száma?
 
-## Feladat
-[link](https://www.hackerrank.com/challenges/pairs/problem?isFullScreen=true)
-Egy egész számokat tartalmazó tömb és egy célérték adott. Határozd meg, hogy hány olyan elem-pár van a tömbben, amelyek különbsége egyenlő a célértékkel.
+# Bemenet:
+Az első sor tartalmaz egy n egész számot: a tömb mérete.
+A következő sor n darab egész számot tartalmaz: x_1, x_2 ... x_n, a tömb számai. 
 
-### Példa
+# Kimenet:
+Írj ki egy egész számot: a körök számát. 
 
-```
-k = 1
-arr = [1, 2, 3, 4]
-```
+# Feltételek 
 
-Három olyan érték van, amelyek különbsége \( k = 1 \): 2 - 1 = 1, 3 - 2 = 1, és 4 - 3 = 1. Az eredmény 3.
+1 <= n <= 2 * 10^5 
 
-### Funkcióleírás
+# Példa
 
-Készítsd el a `pairs` függvényt.
+Bemenet:
+5
+4 2 1 5 3 
 
-A `pairs` függvény a következő paraméterekkel rendelkezik:
-
-- `int k`: egy egész szám, a célkülönbség
-- `int arr[n]`: egy egész számokat tartalmazó tömb
-
-#### Visszatérési érték
-
-- `int`: azon párok száma, amelyek megfelelnek a feltételnek.
-
-### Bemenet Formátum
-
-Az első sor két szóközzel elválasztott egész számot tartalmaz, \( n \) és \( k \)-t, amelyek a tömb méretét és a célértéket jelentik.
-
-A második sor \( n \) szóközzel elválasztott egész számot tartalmaz, amelyek az `arr` tömb elemei.
-
-### Megkötések
-
-- \( 2 <= n <= 10^5 \)
-- \( 0 < k < 10^9 \)
-- \( 0 < arr[i] < 2^{31} - 1 \)
-- minden `arr[i]` elem egyedi lesz
+Kimenet:
+3
